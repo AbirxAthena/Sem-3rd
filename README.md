@@ -1,6 +1,6 @@
-# 🚀 Semester 3 Code Playground 🌈
+# 🚀 Semester 3 Code Fiesta at Govt Engineering College, Ajmer 🌈
 
-Welcome to the groovy Semester 3 Code Repository! 🎉 Get ready to embark on a coding journey filled with colors, challenges, and lots of cool stuff. Dive into the different subject directories and let the coding party begin! 🎊
+Welcome to the groovy Semester 3 Code Playground at Govt Engineering College, Ajmer! 🎉 Get ready to embark on a coding journey filled with colors, challenges, and lots of cool stuff. Dive into the different subject directories and let the coding party begin! 🎊
 
 ## Table of Contents 📚
 
@@ -46,6 +46,10 @@ Mathematics with a dash of color! 🌈 In this section, find mathematical models
 Directory: `digital_electronics`
 
 Electrify your coding experience with Digital Electronics! ⚡ Explore the directory for electrifying circuit implementations, projects that sparkle, and documentation that lights up the coding world.
+
+## College Information 🏛️
+
+This code extravaganza is happening at the prestigious Govt Engineering College, Ajmer. Let's infuse the code with the spirit of our college and make this semester a memorable one!
 
 ## Additional Information 🚀
 
