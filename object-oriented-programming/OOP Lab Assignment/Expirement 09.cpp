@@ -1,5 +1,5 @@
 //Write a C++ program to create two classes each consist of a number and member functions for 
-//input/output. Compute and print the maximum between the two private data members by 
+//input & output. Compute and print the maximum between the two private data members by 
 //using friend function.
 
 
