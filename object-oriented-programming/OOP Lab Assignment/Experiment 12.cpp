@@ -86,3 +86,22 @@ int main() {
 
     return 0;
 }
+
+
+
+// Output:
+// Enter student name: Robert
+// Enter roll number: 04
+// Enter marks for Subject 1: 90
+// Enter marks for Subject 2: 91 
+
+// Student Details:
+// Student Name: Robert
+// Roll Number: 4
+
+// Test Marks:
+// Marks for Subject 1: 90
+// Marks for Subject 2: 91
+
+// Result:
+// Total Marks: 181
