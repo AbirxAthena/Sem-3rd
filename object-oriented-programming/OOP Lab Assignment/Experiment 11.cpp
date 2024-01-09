@@ -50,3 +50,13 @@ int main() {
 
     return 0;
 }
+
+
+
+// Output:
+// Enter the first number: 5
+// Enter the second number: 9
+
+// Entered numbers:
+// Numbers: 5 and 9
+// Maximum number between the two inherited numbers: 9
