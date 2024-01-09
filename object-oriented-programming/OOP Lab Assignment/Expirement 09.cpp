@@ -60,3 +60,18 @@ int main() {
 
     return 0;
 }
+
+
+
+// Output:
+// For the first number:
+// Enter a number: 10
+
+// For the second number:
+// Enter a number: 20
+
+// Entered numbers:
+// Number: 10
+// Number: 20
+
+// Maximum between the two numbers: 20
