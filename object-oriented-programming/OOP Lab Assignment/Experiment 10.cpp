@@ -49,3 +49,13 @@ int main() {
 
     return 0;
 }
+
+
+
+// Output:
+// Object details:
+// Object 1
+// Object 2
+// Object 3
+
+// Total number of objects created: 3
