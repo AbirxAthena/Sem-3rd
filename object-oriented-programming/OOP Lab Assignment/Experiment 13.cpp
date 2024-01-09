@@ -76,3 +76,16 @@ int main() {
 
     return 0;
 }
+
+
+
+// Output:
+// Enter the first number: 15
+// Enter the second number: 19
+
+// Input Numbers:
+// Number 1: 15
+// Number 2: 19
+
+// Multiplication Result:
+// Multiplication Result: 285
