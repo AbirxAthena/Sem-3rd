@@ -37,7 +37,7 @@ private:
 public:
     // Constructor
     Triangle() : Shape("Triangle", 3) {
-        std::cout << "Enter base length of the triangle: ";
+        std::cout << "Enter base of the triangle: ";
         std::cin >> base;
         std::cout << "Enter height of the triangle: ";
         std::cin >> height;
@@ -64,7 +64,7 @@ private:
 public:
     // Constructor
     Square() : Shape("Square", 4) {
-        std::cout << "Enter side length of the square: ";
+        std::cout << "\nEnter side length of the square: ";
         std::cin >> side;
     }
 
@@ -93,3 +93,24 @@ int main() {
 
     return 0;
 }
+
+
+
+// Output:
+// Enter base of the triangle: 10
+// Enter height of the triangle: 5
+
+// Enter side length of the square: 10
+
+// Triangle Details:
+// Shape: Triangle
+// Number of sides: 3
+// Base length: 10
+// Height: 5
+// Area: 25
+
+// Square Details:
+// Shape: Square
+// Number of sides: 4
+// Side length: 10
+// Area: 100
