@@ -86,3 +86,26 @@ int main() {
 
     return 0;
 }
+
+
+
+// Output:
+// Enter Teacher details:
+// Enter name: Anil
+// Enter age: 39
+// Enter post: ass. prof.
+
+// Enter Student details:
+// Enter name: Lakshay
+// Enter age: 19
+// Enter standard: 10
+
+// Teacher Details:
+// Name: Anil
+// Age: 39
+// Post: ass. prof.
+
+// Student Details:
+// Name: Lakshay
+// Age: 19
+// Standard: 10
