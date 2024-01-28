@@ -53,3 +53,8 @@ These are the C programs written for various tasks during the learning sessions.
 ## 13. Reverse linked list
 - **File: [Reverse_list.c](https://github.com/abirxgpt/Sem-3rd/blob/main/data-structures-and-algorithms/DSA%20Lab/Programme%2013.c)**
 - **Description:** Implements of reverse Linked list.
+
+## 14. Insertion Deletion Both
+- **File: [Insertion_deletion.c](https://github.com/abirxgpt/Sem-3rd/blob/main/data-structures-and-algorithms/DSA%20Lab/Programme%2014.c)**
+- **Description:** Insertion and deletion of a program using a switch in C.
+
