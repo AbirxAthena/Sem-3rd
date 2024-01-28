@@ -46,3 +46,10 @@ These are the C programs written for various tasks during the learning sessions.
 - **File: [queue_array.c](https://github.com/abirxgpt/Sem-3rd/blob/main/data-structures-and-algorithms/DSA%20Lab/Programme%2011.c)**
 - **Description:** Implements a queue using an array. Demonstrates basic queue operations.
 
+## 12. Singly linked list
+- **File: [Singly_list.c](https://github.com/abirxgpt/Sem-3rd/blob/main/data-structures-and-algorithms/DSA%20Lab/Programme%2012.c)**
+- **Description:** Implementation of Singly Linked list.
+
+## 13. Reverse linked list
+- **File: [Reverse_list.c](https://github.com/abirxgpt/Sem-3rd/blob/main/data-structures-and-algorithms/DSA%20Lab/Programme%2013.c)**
+- **Description:** Implements of reverse Linked list.
