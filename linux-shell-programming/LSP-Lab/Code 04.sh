@@ -1,3 +1,5 @@
+##To Check if the character input is Alphabet, Digit or a Special Character
+
 #!/bin/bash
 
 echo "please enter the Character: "
