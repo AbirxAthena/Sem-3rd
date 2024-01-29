@@ -1,8 +1,8 @@
 # Fun Bash Scripts Repository
 
-![GitHub last commit](https://img.shields.io/github/last-commit/abirxgpt/fun-bash-scripts)
-![GitHub repo size](https://img.shields.io/github/repo-size/abirxgpt/fun-bash-scripts)
-![GitHub](https://img.shields.io/github/license/abirxgpt/fun-bash-scripts)
+![GitHub last commit](https://img.shields.io/github/last-commit/abirxgpt/linux-shell-programming/LSP-Lab)
+![GitHub repo size](https://img.shields.io/github/repo-size/abirxgpt/linux-shell-programming/LSP-Lab)
+![GitHub](https://img.shields.io/github/license/abirxgpt/linux-shell-programming/LSP-Lab)
 
 Welcome to the Fun Bash Scripts Repository! 🚀 Here, you'll find a collection of Bash scripts that solve various fun and practical problems.
 
