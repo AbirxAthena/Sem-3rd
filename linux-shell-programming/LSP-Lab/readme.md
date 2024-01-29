@@ -1,15 +1,15 @@
-# Fun Bash Scripts Repository
+# Linux Shell Programming Lab - Sem 3rd
 
-![GitHub last commit](https://img.shields.io/github/last-commit/abirxgpt/Sem-3rd/linux-shell-programming/LSP-Lab)
-![GitHub repo size](https://img.shields.io/github/repo-size/abirxgpt/Sem-3rd/linux-shell-programming/LSP-Lab)
-![GitHub](https://img.shields.io/github/license/abirxgpt/Sem-3rd/linux-shell-programming/LSP-Lab)
+![GitHub last commit](https://img.shields.io/github/last-commit/abirxgpt/Sem-3rd?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/abirxgpt/Sem-3rd?style=flat-square)
+![GitHub](https://img.shields.io/github/license/abirxgpt/Sem-3rd?style=flat-square)
 
-Welcome to the Fun Bash Scripts Repository! 🚀 Here, you'll find a collection of Bash scripts that solve various fun and practical problems.
+Welcome to the Linux Shell Programming Lab repository for Semester 3. 🚀 Here, you'll find a collection of Bash scripts solving various problems.
 
 ## Scripts Overview
 
 1. **Greatest Among Three Numbers:**
-   - Find the greatest number among three provided numbers.
+   - Script to find the greatest number among three provided numbers.
 
 2. **Leap Year Checker:**
    - Determine whether a given year is a leap year or not.
@@ -23,3 +23,9 @@ Welcome to the Fun Bash Scripts Repository! 🚀 Here, you'll find a collection 
 5. **Profit or Loss Calculator:**
    - Calculate whether your business made a profit or incurred a loss.
 
+## Usage
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/abirxgpt/Sem-3rd.git
+   cd Sem-3rd/linux-shell-programming/LSP-Lab
