@@ -4,7 +4,9 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/abirxgpt/Sem-3rd?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/abirxgpt/Sem-3rd?style=flat-square)
 
-Welcome to the Linux Shell Programming Lab repository for Semester 3. 🚀 Here, you'll find a collection of Bash scripts solving various problems.
+Welcome to the Linux Shell Programming Lab repository for Semester 3. 
+
+🚀 Here, you'll find a collection of Bash scripts solving various problems.
 
 ## Scripts Overview
 
