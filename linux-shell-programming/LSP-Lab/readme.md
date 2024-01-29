@@ -10,19 +10,20 @@ Welcome to the Linux Shell Programming Lab repository for Semester 3. 🚀 Here,
 
 1. **Greatest Among Three Numbers:**
    - Script to find the greatest number among three provided numbers.
+   - [Check Here](https://github.com/abirxgpt/Sem-3rd/blob/main/linux-shell-programming/LSP-Lab/Code%2001.sh)
 
 2. **Leap Year Checker:**
    - Determine whether a given year is a leap year or not.
-
+   - [Check Here](https://github.com/abirxgpt/Sem-3rd/blob/main/linux-shell-programming/LSP-Lab/Code%2002.sh)
 3. **Triangle Validator:**
    - Input angles of a triangle and check if it forms a valid triangle.
-
+   - [Check Here](https://github.com/abirxgpt/Sem-3rd/blob/main/linux-shell-programming/LSP-Lab/Code%2003.sh)
 4. **Character Type Checker:**
    - Check whether a given character is an alphabet, digit, or a special character.
-
+   - [Check Here](https://github.com/abirxgpt/Sem-3rd/blob/main/linux-shell-programming/LSP-Lab/Code%2004.sh)
 5. **Profit or Loss Calculator:**
    - Calculate whether your business made a profit or incurred a loss.
-
+   - [Check Here](https://github.com/abirxgpt/Sem-3rd/blob/main/linux-shell-programming/LSP-Lab/Code%2005.sh)
 ## Usage
 
 1. Clone the repository:
