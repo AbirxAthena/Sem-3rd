@@ -1,3 +1,6 @@
+# 3CS4-03: Data Structures and Algorithms
+## SCHEME & SYLLABUS
+
 ### 1. **Introduction to Algorithms and Analysis:** 
 - [ ] Fundamentals of algorithm analysis
 - [ ] Space and time complexity of an algorithm
