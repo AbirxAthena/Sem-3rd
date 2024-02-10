@@ -70,6 +70,7 @@ will create an object rectangle of shape class
 **Encapsulation** is basically wrapping or bundling of the data and methods that work on that data together. also restricting the data from the outside functions. Like putting something in a box we can access the whole box but can't see what's inside of that box.
 
 **Abstraction** basically hides the complex details and only shows what's necessary parts to the outside world. it's like a TV remote we just have to use it doesn't have to understand how TV remote actually works we just need to know how to use TV remote.
+
 ` Since the Class use Data Abstraction they're also called as Abstract Data Types `
 
 #### Inheritance.
@@ -88,6 +89,7 @@ it means that the specific method to be executed for a given function call is de
 #### Message Passing
 Message passing is a way for objects to communicate with each other in object-oriented programming. Instead of directly accessing or modifying another object's data, one object sends a message to another object, requesting it to perform a certain action or provide information. This communication typically involves invoking methods or functions of the receiving object.
 
+### Benefits of the Object Oriented Programming.
 
 
 
