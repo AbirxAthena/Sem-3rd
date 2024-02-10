@@ -58,7 +58,8 @@ We know that object have data and code to manupulate the data,Now the whole batc
 if once we define a class, we can create numerous number of object with that class and define them into that class. Each object associates to the data defined by its class.
 For Example:
 ```
-Circle, Triangle and Square are member of the class Shapes. So the class are user defined data types but they work as a functions
+Circle, Triangle and Square are member of the class Shapes. 
+So the class are user defined data types but they work as a functions
 and we can Denote the class by simply giving the syntax
 `
 Shapes Rectangle;
@@ -89,12 +90,54 @@ it means that the specific method to be executed for a given function call is de
 #### Message Passing
 Message passing is a way for objects to communicate with each other in object-oriented programming. Instead of directly accessing or modifying another object's data, one object sends a message to another object, requesting it to perform a certain action or provide information. This communication typically involves invoking methods or functions of the receiving object.
 
-### Benefits of the Object Oriented Programming.
+### <u>Benefits of the Object Oriented Programming.</u>
+1. It allows us to reuse the code which saves our time and efforts, when we create a class that class can be used multiple times in a code make it Reusable
+
+2. It allows us to break down problem into smaller bit for easy solving.
+
+3. It helps us to make better productivity, Less Cost and Also Better Quality.
+
+4. It is possible for multiple objects of same type coexist with each other without Interference.
+
+5. Message Passing helps us to not interfere with the object.
+
+6. Software complexity can be easily managed.
+
+7. Data Hiding helps in making more secure program.
 
 
+### <u> Applications of Object Oriented Programming.</u>
+**1. Real-Time System Design:** Read time systems are complex to build. OOP helps them to make it easier.
+
+**2. AI Expert System:** These are computer application that is developed to solve complex problems which are far beyond the human brain. OOP helps to develop such an AI expert System.
 
 
+**3. Neural networking and parallel programming:** it tackle predicting and approximating complex, changing systems. OOP simplifies this by making it easier to approximate and predict with the network.
 
+
+**4. Object Oriented Databases:** It helps in making real world objects directly adding them to the database to protect their Identity and Integrity.
+
+**5 CIM/CAD/CAM Systems:** it also helps in making these kinds of system (Designing and Manufacturing) to reduce efforts and time.
+
+**6 Hypertext and Hypermedia:** OOP also helps in laying the framework for hypertext and hypermedia.
+
+
+## Summary
+it is Basically the summary of what we learned today and in this chapter till now.
+
+* [x] Procedure-Oriented Programming (POP) was the main approach until recently. It breaks problems into tasks and uses functions to solve them. 
+
+* [x] POP has drawbacks: data moves freely, making it vulnerable to changes, and it doesn't represent real-world problems well.
+
+* [x] Object-Oriented Programming (OOP) was introduced to address these drawbacks. It focuses on data, tying it closely to functions in classes through data encapsulation.
+
+* [x] In OOP, problems are seen as collections of objects, instances of classes. Data insulation is called data hiding, and abstraction means focusing on essential features.
+
+* [x] Inheritance lets objects of one class inherit properties from another. Polymorphism allows one name to have multiple forms.
+
+* [x] Dynamic binding means code for a procedure is decided at runtime. Message passing involves specifying object and function names and information to be sent.
+
+* [x] OOP offers benefits like reusability and is used in various computing fields. Languages like C++, Smalltalk, and Java support OOP, with C++ being widely adopted.
 
 
 
