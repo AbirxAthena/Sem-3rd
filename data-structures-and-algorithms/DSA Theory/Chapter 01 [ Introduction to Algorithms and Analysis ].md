@@ -6,16 +6,16 @@ The word Algorithm means
 Or
 ” A procedure for solving a mathematical problem in a finite number of steps that frequently involves recursive operations”.
 ```
+### What is Algorithm??
 ```mermaid
 flowchart LR
-    A[Input] --> B{Set of Rules and 
+    B{"Set of Rules and 
     Regulations to obtain
     the Required Output
-    from the given input}
-
-    B --> C[Output]
+    from the given input"}
+    A(Input) --> B --> C[Output]
+    
 ```
-
     
 ### **Uses of Algorithm**
 
