@@ -75,3 +75,27 @@ It Interprets the Command given by the user and then sends it as an Instruction 
 Shell has many types and user should choose their shell according to their use and easyness.  
 Shell is simply an Application running over the Kernel and Which Provides a Powerful Interactive Space to the user.
 
+### Applications/Programs
+Linux provides the Vast range of software both Free and Paid or Open/Closed source for Leisure, Study and Multiple uses.  
+Also Every other software we use in Windows or MacOS has it's own alternative software for Linux OS or we can say that Multiple Alternatives.  
+Most of the Software that you need are Available on the distribution repositories.
+
+### Stages of Linux Boot Process:
+```mermaid
+graph TD
+    BIOS_Boot --> Boot_Loader
+    Boot_Loader --> Kernel_Image
+    Kernel_Image --> Initialize_Devices
+    Initialize_Devices --> Mount_FileSystem
+    Mount_FileSystem --> Init_Program
+    Init_Program --> Start_System_Processes
+    Start_System_Processes --> Login_Method
+
+```
+* BIOS Boot: The machine's BIOS or boot microcode initializes and runs a boot loader.
+* Boot Loader: The boot loader locates the kernel image on the disk and loads it into memory to start the system.
+* Kernel Image: The kernel initializes the devices and their drivers.
+* Initialize Devices: The kernel mounts the basic filesystem.
+* Mount Filesystem: The kernel starts a program referred to as init with a process ID zero.
+* Init Program: Init sets the remainder of the system processes in motion.
+* Start System Processes: Init starts a method allowing you to log in, typically at the end or near the end of the boot sequence.
