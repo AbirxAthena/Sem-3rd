@@ -33,14 +33,15 @@ Or
 
 
  ```mermaid
- flowchart TD
-A[Characterstics of Algorithm] -->B(Well Defined Inputs)
-A[Characterstics of Algorithm] -->C(Well Defined Outputs)
-A[Characterstics of Algorithm] -->D(Language Independent)
-A[Characterstics of Algorithm] -->E(Effective)
-A[Characterstics of Algorithm] -->F(Clear and Unambigous)
-A[Characterstics of Algorithm] -->G(Finite)
-A[Characterstics of Algorithm] -->H(Feasible)
+mindmap
+  root((mindmap))
+    Language Independant
+    Effective
+    Unambiguous
+    Finite
+    Well Defined Input
+    Well Defined Output
+    Feasible
 
 ```
 
