@@ -1,4 +1,4 @@
-### Fundamentals of Algorithm Analysis
+## Fundamentals of Algorithm Analysis
 **Definition of Algorithm:**
 ```
 The word Algorithm means 
@@ -43,3 +43,24 @@ A[Characterstics of Algorithm] -->G(Finite)
 A[Characterstics of Algorithm] -->H(Feasible)
 
 ```
+
+### Advantages of Algorithm
+- Algos are easy to understand
+- It gives step wise solution to any problem
+- It is easy for a programmer to Code it because it break down problems into smaller steps
+
+### Disadvantages of Algorithm
+- Time Consuming to write algorithms
+- Complex logic are very hard to understand
+- Loops and Branching are hard to understand in Algorithm
+  
+## Space and Time complexity of an algorithm
+The Complexity in the Algorithm is determined by the Time and Space it uses, That means the Total time it took to execute the program and also the Storage Required to the program to successfully execute it.
+
+So by this,
+We can Divide the complexity into two parts
+
+- **Space Factor:** Total Amount of Storage is observed by counting the maximum memory space required by the algorithm
+- **Time Factor:** Total time is observed by counting the number of key operations
+
+### Space Complexity: 
