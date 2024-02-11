@@ -2,7 +2,7 @@
 ## SCHEME & SYLLABUS
 
 ### 1. **Introduction to Algorithms and Analysis:** 
-- [ ] Fundamentals of algorithm analysis
+- [x] Fundamentals of algorithm analysis
 - [ ] Space and time complexity of an algorithm
 - [ ] Types of asymptotic notations and orders of growth
 - [ ] Algorithm efficiency – best case, worst case, average case
