@@ -6,8 +6,17 @@ The word Algorithm means
 Or
 ” A procedure for solving a mathematical problem in a finite number of steps that frequently involves recursive operations”.
 ```
-<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191016135223/What-is-Algorithm_-1024x631.jpg" alt="drawing" width="500"/>
+```mermaid
+flowchart LR
+    A[Input] --> B{Set of Rules and 
+    Regulations to obtain
+    the Required Output
+    from the given input}
 
+    B --> C[Output]
+```
+
+    
 ### **Uses of Algorithm**
 
 **1. Computer Science:** it is the foundation of computer programming cause it takes input and gives output within the set of rules also it is base foundation of AI and ML in Computer Programming.
