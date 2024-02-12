@@ -3,8 +3,8 @@ INTRODUCTION TO LINUX AND LINUX UTILITIES:
 ## SCHEME & SYLLABUS
 
 ### 1. **Introduction To Linux And Linux Utilities:** 
-- [ ] History
-- [ ] Architecture
+- [X] History
+- [X] Architecture
 - [ ] Features of LINUX
 - [ ] Linux commands:
 + - [ ] sudo
