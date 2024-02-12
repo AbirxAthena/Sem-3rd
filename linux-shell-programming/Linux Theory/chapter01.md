@@ -99,3 +99,15 @@ graph TD
 * Mount Filesystem: The kernel starts a program referred to as init with a process ID zero.
 * Init Program: Init sets the remainder of the system processes in motion.
 * Start System Processes: Init starts a method allowing you to log in, typically at the end or near the end of the boot sequence.
+  
+Short Trick to Learn:  
+`B-B-K-D-F-P-S-Log`
+
+### Linux Directory Structure
++ LINUX File structure is like a Hiearchial Structure, Like a Inverted Tree.
++ The Base or Main Folder is called as Root or Denoted as Slash (/).
++ **bin:** it is Available for all users, It is Essential for all Users.
++ **boot:** bootable Kernel and bootloader.
++ **dev:** contains various devices.
++ **etc:** contains various system configs.
++ **home:** contains home directories for all users.
