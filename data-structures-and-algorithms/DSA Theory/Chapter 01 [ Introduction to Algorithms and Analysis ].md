@@ -43,7 +43,7 @@ flowchart LR
 
  ```mermaid
 mindmap
-  root((mindmap))
+  root((Characterstics of Algorithm))
     Language Independant
     Effective
     Unambiguous
