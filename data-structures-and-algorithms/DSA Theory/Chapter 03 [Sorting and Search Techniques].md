@@ -1,12 +1,12 @@
 # Sorting Algorithms
-A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
+A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.            
 
-For Example: The below list of characters is sorted in increasing order of their ASCII values. That is, the character with a lesser ASCII value will be placed first than the character with a higher ASCII value.
-Unsorted Array: [234, 346, 55, 56, 76, 935, 2, 12]
-Sorted Array:   [2, 12, 55, 56, 76, 234, 346, 935]
+For Example: The below list of characters is sorted in increasing order of their ASCII values. That is, the character with a lesser ASCII value will be placed first than the character with a higher ASCII value.       
+Unsorted Array: [234, 346, 55, 56, 76, 935, 2, 12]            
+Sorted Array:   [2, 12, 55, 56, 76, 234, 346, 935]                 
 
-## Bubble Sort:
-+ It is the Simplest sorting algorithm used.
+## Bubble Sort:       
++ It is the Simplest sorting algorithm used.         
 + Is is done by repeatedly swapping the adjacent element in the array till the Array is sorted
 + It can't be worked on large datas cause of it's average & worst-case time complexity is very high.
 
