@@ -3,8 +3,8 @@
 
 ### 1. **Introduction to Algorithms and Analysis:** 
 - [x] Fundamentals of algorithm analysis
-- [ ] Space and time complexity of an algorithm
-- [ ] Types of asymptotic notations and orders of growth
+- [X] Space and time complexity of an algorithm
+- [X] Types of asymptotic notations and orders of growth
 - [ ] Algorithm efficiency – best case, worst case, average case
 - [ ] Analysis of non-recursive and recursive algorithms
 
@@ -20,10 +20,10 @@
 
 ### 3. Sorting and Search Techniques:
 + Sorting Algorithms: 
-- [ ] Basic concepts
-- [ ] Bubble Sort
-- [ ] Insertion Sort
-- [ ] Selection Sort
+- [X] Basic concepts
+- [X] Bubble Sort
+- [X] Insertion Sort
+- [X] Selection Sort
 - [ ] Quick Sort
 - [ ] Shell Sort
 - [ ] Heap Sort
