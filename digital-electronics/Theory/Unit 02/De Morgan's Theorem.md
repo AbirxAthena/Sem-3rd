@@ -44,3 +44,7 @@ De Morgan's theorems are a set of two fundamental rules in Boolean algebra, name
 | 0 | 1 | 0                | 1              | 0              | 0                             |
 | 1 | 0 | 0                | 0              | 1              | 0                             |
 | 1 | 1 | 1                | 0              | 0              | 1                             |
+
+
+### Q. What are the implications of De Morgan’s theorem?
+=>  De Morgan’s theorems can be used when we want to prove that the NAND gate is equal to the OR gate that has inverted inputs and the NOR gate is equal to the AND gate that has inverted inputs. To reduce the expressions that have large bars, we must first break up these bars.
