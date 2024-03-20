@@ -24,10 +24,10 @@
 - [X] Bubble Sort
 - [X] Insertion Sort
 - [X] Selection Sort
-- [ ] Quick Sort
+- [X] Quick Sort
 - [ ] Shell Sort
-- [ ] Heap Sort
-- [ ] Merge Sort
+- [X] Heap Sort
+- [X] Merge Sort
 - [ ] Counting Sort
 - [ ] External Sorting
 - [ ] Internal Sorting
