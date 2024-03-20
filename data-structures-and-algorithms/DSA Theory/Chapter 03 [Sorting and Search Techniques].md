@@ -196,7 +196,7 @@ Space Complexity:	$O(1)$
 = It is easy to Understand and Implement.   
 = Works well with small datasets.     
  
-**Disadvantages of Insertion Sort:**  
+**Disadvantages of Selection Sort:**  
 = It's Time Complexity is Very High so it's not Really Good for Larger Data Sets.    
 = Not Stable Sorting algorithm.    
 = Not adapt to the Data input.    
@@ -213,4 +213,208 @@ Space Complexity:	$O(1)$
 8. End Repeat
 9. End
 ```
+## Quick Sort: 
++ It is the Algorithm based on Divide and Conquer Approach.
++ An array is divided into SubArrays by selecting a Pivot element.   
++ The left and right SubArrays are also divided using the same approach. 
++ This process continues until each subarray contains a single element.
+
+**Process of Quick Sort**
++ Pick an Element Called Pivot from the array.(Can be any Element at random).
++ Then Use the Comparison so that we can rearrange the array as the Smaller element than Pivot Comes in Left Side and Same as this Larger comes in the Right Side of the Pivot.
++ Then we Recursuvely perform this same action on the subarrays made by dividing the pivot by itself.
++ When all subarrays are sorted then we will combine then to get to the Final Sorted array.
+
+**Example1**
+#### Initial array: [9, 4, 3, 8, 6, 7, 5]
+
++ Step1: Let's Choose a Pivot. (we choose as 5).
++ Step2: Sort the Array as Elements Smaller than 5 Goes in Left and Largers goes in Right Side of 6.
+> After that Array would be like: [4, 3, 5, 8, 6, 7, 9]     
+> Process of Sorting this type would be like:      
+> > First We Take the First Element in the array and Compare it to the Pivot.      
+> > 9<5, No so we'll Take this as Higher Pointer & Move on to the Next Element.       
+> > 4<5, Yes so we'll Swap 9 with 4.      
+> > Array: [4, 9, 3, 8, 6, 7 ,5]         
+> > Moving on Next 3<5, Yes so we'll Again swap with Higher Pointer.         
+> > Array: [4, 3, 9, 8, 6, 7 ,5]         
+> > Moving Ahead we didn't Find any Smaller Element than 5.         
+> > So we'll Swap 5 with 9.        
+> > Array: [4, 3, 5, 8, 6, 7, 9]          
+> By This we Sorted the Array with Pivot.           
++ Step3: Then the Array gets Divided at the Pivot Point into Two Parts. ([4, 3] & [8, 6, 7, 9]).         
++ Step4: We'll perform the Same From Step 1 on Both of these Subarrays.        
++ Step5: Arrays We get after taking Pivot as First Element: [3, 4] & [6, 7, 8, 9].           
+
+#### Now, the array is sorted: [3, 4, 5, 6, 7, 8, 9].
+
+<ins>**Complexity of Quick Sort:**</ins>  
+<ins>Time Complexity:</ins>
+                  Worst:     $n^2$       
+                  Best:      $nlog n$       
+                  Average:   $nlog n$       
+                
+<ins>Space Complexity:</ins>	$log n$
+
+**Advantages of Quick Sort:**  
+= It is a divide-and-conquer algorithm that makes it easier to solve problems.
+= Works well with Large datasets.     
+= Only requires small amount of Memory to Perform.    
+ 
+**Disadvantages of Quick Sort:**  
+= Has worst Case Time Complexity When Pivot is poorly Choosen.
+= Not Stable Sorting algorithm.    
+= Not A good Choice for Small Data Sets.    
+
+### Algorithm for Quick Sort
+```
+1. Procedure quickSort(arr[], low, high)
+2.     If low < high Then
+3.         pivotIndex = partition(arr, low, high)
+4.         quickSort(arr, low, pivotIndex - 1)
+5.         quickSort(arr, pivotIndex + 1, high)
+6.     End If
+7. End Procedure
+
+8. Function partition(arr[], low, high)
+9.     pivot = arr[high]
+10.    i = low - 1
+11.    For j = low to high - 1
+12.        If arr[j] <= pivot Then
+13.            i++
+14.            swap arr[i] with arr[j]
+15.        End If
+16.    End For
+17.    swap arr[i + 1] with arr[high] (placing pivot in its correct position)
+18.    Return i + 1 (returning the index of the pivot)
+19. End Function
+
+```
+
+## Merge Sort: 
++ It is also Based on Divide and Conquer Rule.
++ Here the Problem is Divided into SubProblems and then they are Solved.
++ Then those Solution are Combined to join them into one.
+
+**Process of Merge Sort**
++ First we Take an array and divide it from the middle.
++ Then we Take Those Sub arrays and same Divide them from Middle again.
++ And we Do that Until the Array Gets Separated into Sub Arrays with Single Element.
++ Then these arrays are combined and then also get sorted within joining arrays.
++ Then those arrays are also Merged into bigger arrays and also sorted and joined and Sorted Further.
+
+**Example:**
+#### Array [7, 2, 4, 9, 5, 10, 1].
+
++ Step 1: Divide
+> Divide the array into smaller sub-arrays until each sub-array has only one element.     
+> Initial array: [7, 2, 4, 9, 5, 10, 1]     
+> Divide into sub-arrays: [7], [2], [4], [9], [5], [10], [1]
+
++ Step 2: Merge (and Sort)
+> Merge and sort adjacent sub-arrays to create larger sorted sub-arrays.    
+> Merge [7] and [2]: Result: [2, 7]    
+> Merge [4] and [9]: Result: [4, 9]    
+> Merge [5] and [10]: Result: [5, 10]    
+> Merge [1] and [4, 9]: Result: [1, 4, 9]    
+> Merge [2, 7] and [5, 10]: Result: [2, 5, 7, 10]    
+> Merge [1, 4, 9] and [2, 5, 7, 10]:     
+> Result: [1, 2, 4, 5, 7, 9, 10]     
+
+#### Final Sorted Array:
+#### The final sorted array is [1, 2, 4, 5, 7, 9, 10].
+
+<ins>**Complexity of Merge Sort:**</ins>  
+<ins>Time Complexity:</ins>
+                  Worst:     $O(n log n)$       
+                  Best:      $O(n log n)$       
+                  Average:   $O(n log n)$       
+                
+<ins>Space Complexity:</ins>	$O(n)$
+
+
+**Advantages of Merge Sort:**  
+= It is a divide-and-conquer algorithm that makes it easier to solve problems. 
+= Works well with Large datasets.       
+= Has Guaranteed Worst Time Complexity of O(nlog n).   
+= It is a Stable Sorting Algorithm
+ 
+**Disadvantages of Merge Sort:**  
+= Requires Additional Memory Space for working.      
+= It is not Very Optimised For Smaller Datasets.     
+
+### Algorithm for Quick Sort
+```
+MergeSort(arr[], low, high)
+1. If low is less than high:
+2.     Set middle as (low + high) / 2
+3.     Call MergeSort(arr, low, middle)  // Recursively sort the left half
+4.     Call MergeSort(arr, middle + 1, high) // Recursively sort the right half
+5.     Merge(arr, low, middle, high)  // Merge the sorted halves
+
+Merge(arr[], low, middle, high)
+1. Create temporary arrays leftArr[] and rightArr[]
+2. Set leftArr[] to contain elements from arr[low] to arr[middle]
+3. Set rightArr[] to contain elements from arr[middle+1] to arr[high]
+4. Initialize variables: i to low, j to middle + 1, k to low
+5. While i is less than or equal to middle and j is less than or equal to high:
+6.     If leftArr[i] <= rightArr[j]:
+7.         Set arr[k] to leftArr[i]
+8.         Increment i by 1
+9.     Else:
+10.        Set arr[k] to rightArr[j]
+11.        Increment j by 1
+12.    Increment k by 1
+13. Copy remaining elements of leftArr[] and rightArr[], if any, into arr[]
+```
+## Heap Sort: 
++ It is Based on Heap Structure or Like a Tree Structure.
++ It is very Similar to Selection Sort where First Minimum is Chosen.
++ In this first Maximum element is Chosen and it is put into the position.
++ And by this process We sort the Array.
+
+**Process of Heap Sort**
++ Build a heap from the given input array.
++ Swap the root element of the heap (which is the largest element) with the last element of the heap.
++ Remove the last element of the heap (which is now in the correct position).
++ Heapify the remaining elements of the heap.
++ Repeat the following steps until the heap contains only one element:
++ The sorted array is obtained by reversing the order of the elements in the input array.
+
+**Example:**
+It's a Bit Hard To understand it with the Text so we will use Images as the Example for this
+
+#### Array [1, 12, 9, 5, 6, 10].
++ Step1: We'll Build A Tree From the Array.
++ ![image](https://github.com/abirxgpt/Sem-3rd/assets/142162873/4d0f45e5-a733-4ecd-814a-f95f39ae2aeb)
++ Step2: We'll Heapify the Tree.
++ ![image](https://github.com/abirxgpt/Sem-3rd/assets/142162873/07115ef8-6555-4a6b-8801-552b68ab1ced)
++ Step3: We'll Swap the Root to the Last Node.
+![image](https://github.com/abirxgpt/Sem-3rd/assets/142162873/a4349e0d-46bb-48ba-9306-06635ae794f2)
++ Step4: Then We'll remove it and Put it into the Array and Heapify the Remaining Tree.
+![image](https://github.com/abirxgpt/Sem-3rd/assets/142162873/a97604da-2cd4-48e7-a00e-a69cc2566bfc)
++ Step5: Repeat the Same Process Again and Again until we get [Last Node = Root]
+![image](https://github.com/abirxgpt/Sem-3rd/assets/142162873/a44248e4-34f1-48af-8f69-4ea2bc57092b)
+
+#### Sorted Array: [1, 5, 6, 9, 10 ,12].
+**Important Note: Here in Example I Directly Put the Element I Removed into Last Position of Array, so No need to Reverse it**
+
+<ins>**Complexity of Heap Sort:**</ins>  
+<ins>Time Complexity:</ins>
+                  Worst:     $O(n log n)$       
+                  Best:      $O(n log n)$        
+                  Average:   $O(n log n)$             
+                
+<ins>Space Complexity:</ins>	$O(1)$
+
+
+**Advantages of Heap Sort:**  
+= It is very Simple to understand as an Algorithm.     
+= It Has Constant time Complexity so that it is very good for Larger Datasets.       
+= Memory Usage Can be Minimal.
+ 
+**Disadvantages of Heap Sort:**  
+= Heap sort is costly.       
+= Heap sort is Unstable Sorting Algorithm.        
+= Not very efficient when working with highly complex data.    
 
