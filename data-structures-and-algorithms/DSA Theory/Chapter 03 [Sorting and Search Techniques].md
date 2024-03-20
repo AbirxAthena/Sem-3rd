@@ -343,7 +343,7 @@ Space Complexity:	$O(1)$
 = Requires Additional Memory Space for working.      
 = It is not Very Optimised For Smaller Datasets.     
 
-### Algorithm for Quick Sort
+### Algorithm for Merge Sort
 ```
 MergeSort(arr[], low, high)
 1. If low is less than high:
@@ -418,3 +418,32 @@ It's a Bit Hard To understand it with the Text so we will use Images as the Exam
 = Heap sort is Unstable Sorting Algorithm.        
 = Not very efficient when working with highly complex data.    
 
+### Algorithm for Merge Sort
+```
+HeapSort(arr[], n)
+1. BuildMaxHeap(arr, n)   // Build a max heap from the given array
+2. Set heapSize to n
+3. Repeat steps 4-5 while heapSize > 1
+4.     Swap arr[0] with arr[heapSize - 1]   // Swap the root (maximum element) with the last element
+5.     Decrease heapSize by 1   // Reduce the size of the heap
+6.     MaxHeapify(arr, 0, heapSize)   // Heapify the remaining elements
+7. End Repeat
+
+BuildMaxHeap(arr[], n)
+1. Set heapSize to n
+2. Repeat steps 3-5 for each index i from n/2 - 1 down to 0
+3.     MaxHeapify(arr, i, heapSize)   // Heapify the subtree rooted at index i
+4. End Repeat
+
+MaxHeapify(arr[], i, heapSize)
+1. Set largestIndex to i
+2. Set leftChild to 2 * i + 1   // Index of the left child
+3. Set rightChild to 2 * i + 2   // Index of the right child
+4. If leftChild < heapSize and arr[leftChild] > arr[largestIndex], then
+5.     Set largestIndex to leftChild
+6. If rightChild < heapSize and arr[rightChild] > arr[largestIndex], then
+7.     Set largestIndex to rightChild
+8. If largestIndex ≠ i, then
+9.     Swap arr[i] with arr[largestIndex]
+10.    MaxHeapify(arr, largestIndex, heapSize)   // Recursively heapify the subtree
+```
