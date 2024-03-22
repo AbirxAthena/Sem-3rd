@@ -447,3 +447,73 @@ MaxHeapify(arr[], i, heapSize)
 9.     Swap arr[i] with arr[largestIndex]
 10.    MaxHeapify(arr, largestIndex, heapSize)   // Recursively heapify the subtree
 ```
+## Shell Sort: 
++ It is a Extenstion of insertion sort
++ It First uses big gaps to Compare between Element and then Short Them Gradualy.
++ The Gaps are Generally Decided by the Algorithm itself.
++ The Performance of Shell sort is basically Dependant upon Gap Algorithm.
+
+**Process of Shell Sort**
++ First we will Choose the Gap (We are using Gap sequence of Shell Sort Itself i.e. N/2, N/4......1)
++ Then the N will be the size of the Array or the Number of Elements to be sorted.
++ Then the Gap Elements will Compare themselves and If the First Element is smaller than the Second Element.
++ We will Swap it and then increment the number of Element.
++ After the Array is Completed by N/2 we will Choose N/4 and Goes on.
++ This Will be Better to Understand it by Example.
+
+**Example:**
+#### Initial Array: [8, 3, 5, 1, 4, 7, 2, 6].
+
++ Step 1: Let's Initialize Gap so N/2 (Size of Array / 2) at first.   
++ Pass 1:   
+> 8/2 = 4.   
+> So we will take 4 Gaps between each Element.   
+> From Starting we will Compare 0th Element and 4th Element (8<4, Yes so we will swap them)   
+> Array: [4, 3, 5, 1, 8, 7, 2, 6]   
+> Then we will compare 1st Element and 5th Element (3<7, No so we will Move on to the Next)   
+> Then we will compare 2nd Element and 6th Element (5>2, Yes so we will swap them)   
+> Array: [4, 3, 2, 1, 8, 7, 5, 6]   
+> Then we will compare 3rd Element and 7th Element (1>6, No so we will Move on to the Next)   
+> Now there's no Element after 7th Element so we will move onto Next Pass.   
++ Pass 2:   
+> Here Gap N/4 = 8/4 = 2   
+> So we will start Comparing Elements with gap of 2 between Each.   
+> Array At the End will be: [2, 1, 4, 3, 5, 6, 8, 7]   
++ Pass 2:      
+> Here Gap N/8 = 8/8 = 1   
+> Compare and swap adjacent elements as in regular insertion sort.   
+> After the final pass, the array is fully sorted: [1, 2, 3, 4, 5, 6, 7, 8].   
+ 
+
+<ins>**Complexity of Shell Sort:**</ins>  
+<ins>Time Complexity:</ins>
+                  Worst:     $O(n^2)$       
+                  Best:      $Ω(n log(n))$       
+                  Average:   $O(n*log n)~O(n^(1.25))$       
+                
+<ins>Space Complexity:</ins>	$O(1)$
+
+
+**Advantages of Shell Sort:**  
+= Replacement for insertion sort, where it takes a long time to complete a given task.    
+= To Sort Medium to Large Size Databases.     
+= In Insertion Sort to Reduce the Number of Operations
+ 
+**Disadvantages of Shell Sort:**  
+= It is not a Stable sorting Algorithm    
+= It is Solely Depends on it's Gap Sequence     
+= It is not Always Very Efficient      
+
+### Algorithm for Shell Sort
+```
+ShellSort(arr[], n)
+1. Define a sequence of gaps (intervals) for sorting.
+2. Start with a large gap, typically half the length of the array, and reduce it in each iteration.
+3. Repeat the following steps until the gap becomes 1:
+     1. For each gap, iterate through the array from gap to n-1:
+         a. Compare arr[i] with arr[i-gap].
+         b. If arr[i] is less than arr[i-gap], swap them.
+         c. Continue comparing and swapping elements with a gap until no more swaps are needed.
+4. After the last pass with a gap of 1, the array is fully sorted.
+
+```
