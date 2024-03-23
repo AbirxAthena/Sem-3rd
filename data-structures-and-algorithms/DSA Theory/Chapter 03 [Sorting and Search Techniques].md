@@ -517,3 +517,105 @@ ShellSort(arr[], n)
 4. After the last pass with a gap of 1, the array is fully sorted.
 
 ```
+## Counting Sort: 
++ It is a Non-Comparison-Based Sorting Algorithm.
++ It is Very good for Short Number of Elements & Repeatative Elements.
++ Idea Based on Counting Sort is that it Count the Frequency of Each Distinct Element.
++ And use it to place the Element in thier correct sorted position.
+
+**Process of Counting Sort**
++ First we will choose the Max Element from the Array.
++ Then we will make an Extra Array of a size [Max + 1].
++ Then we will count the Array and Store Each Elements in the Position of the Array.
++ Then We will do a Cumulative Count or Sum for the Array.
++ Finally we will check the Array and Store it to the Final Array in Position [Element - 1].
+
+**Example:**
+#### Initial Array: [4, 2, 2, 8, 3, 3, 1].
+
++ Step 1: Let's Take the Array: [4, 2, 2, 8, 3, 3, 1].
++ Step 2: Let's find the Max Element i.e.: Max = 8.
++ Step 3: Then we will make an array of Max+1 and Store all the Values as 0 from Start
+> Array: [0,0,0,0,0,0,0,0,0]      
++ Step 4: We will Increase the Count of the Array as they are in the Input Array.
+> Array: [0,0,0,0,0,0,0,0,0]      
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠 0,1,2,3,4,5,6,7,8     
+> So Starting from the start we will take 4 and increase the count of number 4th Element in the array.     
+> Array: [0,0,0,0,1,0,0,0,0]       
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠 0,1,2,3,4,5,6,7,8      
+> Next 2 so we will increase number of 2th Element.     
+> Array: [0,0,1,0,1,0,0,0,0]      
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠 0,1,2,3,4,5,6,7,8     
+> Next Again 2 we will increase number of 2th Element Again.      
+> Array: [0,0,2,0,1,0,0,0,0]      
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠 0,1,2,3,4,5,6,7,8     
+> By doing this we will at the end will get the Array.       
+> Array: [0,1,2,2,1,0,0,0,1]      
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠 0,1,2,3,4,5,6,7,8     
++ Step 5: Now we will Cumulative Count the Whole Array.      
+> Array: [0,1,3,5,6,6,6,6,7]      
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠 0,1,2,3,4,5,6,7,8    
++ Step 6: Now we will Sort the Whole Array as by Taking Element from Input Array and Checking the Position and Then Storing it in Next array by doing [Count in Particular Position - 1]
+> Input Array: [4, 2, 2, 8, 3, 3, 1]                             
+> Let's Take 4 & Check it in the Temp Array We Made                    
+> Array: [0,1,3,5,6,6,6,6,7]         
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠 0,1,2,3,4,5,6,7,8        
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠^          
+> so 6-1 = 5     
+> Storing it into the 5th Position. i.e. [0,0,0,0,0,4,0]                   
+> Let's Take 2                  
+> Array: [0,1,3,5,6,6,6,6,7]      
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠 0,1,2,3,4,5,6,7,8   
+> 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠   󠀠 󠀠 󠀠 󠀠^          
+> so 3-1 = 2    
+> Storing it into the 2nd Position. i.e. [0,0,2,0,0,4,0]                 
+> Let's Take 2 Again & Now We will use Position of 2.           
+> Array: [0,1,3,5,6,6,6,6,7]      
+>󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠 0,1,2,3,4,5,6,7,8   
+>󠀠󠀠󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠󠀠  󠀠 󠀠 󠀠 ^          
+> so 2-1 = 1      
+> Storing it into the 2nd Position. i.e. [0,2,2,0,0,4,0]          
++ Step 7: Completing the Whole Array we will Get.
+
+#### Sorted Array: [1,2,2,3,3,4,8]
+
+
+
+<ins>**Complexity of Counting Sort:**</ins>  
+<ins>Time Complexity:</ins>
+                  Worst:     $O(N+M)$       
+                  Best:      $O(N+M)$       
+                  Average:   $O(N+M)$       
+                _Where N and M is inputArray[] and countArray[] Respectively._
+                
+<ins>Space Complexity:</ins>	$O(N+M)$
+
+                _Where N and M is outputArray[] and countArray[] Respectively._
+
+
+**Advantages of Counting Sort:**  
+= It is a Stable Algorithm.   
+= Counting Sort is Easy To Code.      
+= Counting Sort is Faster than All Comparision Based Algorithm, such as Merge Sort or Quick Sort.     
+
+**Disadvantages of Counting Sort:**  
+= It Does not Work on the Decimel Values.       
+= It Does not Work if Number of Element is Too Large.      
+= Counting Sort is not an In-place sorting algorithm.         
+
+### Algorithm for Counting Sort
+```
+CountingSort(arr[], n)
+1. Find the maximum element, max, in the array.
+2. Create a counting array, count[], of size max+1, initialized with all zeros.
+3. Iterate through the input array arr[] and increment the count of each element in the counting array.
+4. Compute the prefix sum of the counting array to determine the position of each element in the sorted array.
+5. Create a temporary array, sortedArr[], of size n to store the sorted elements.
+6. Iterate through the input array arr[]:
+   a. Use the element arr[i] as an index to determine its position in the sorted array.
+   b. Decrement the count of arr[i] in the counting array.
+   c. Place arr[i] in the sortedArr[] at the determined position.
+7. Copy the elements from sortedArr[] back to the original array arr[].
+
+
+```
