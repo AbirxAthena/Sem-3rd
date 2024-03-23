@@ -25,10 +25,10 @@
 - [X] Insertion Sort
 - [X] Selection Sort
 - [X] Quick Sort
-- [ ] Shell Sort
+- [X] Shell Sort
 - [X] Heap Sort
 - [X] Merge Sort
-- [ ] Counting Sort
+- [X] Counting Sort
 - [ ] External Sorting
 - [ ] Internal Sorting
 - [ ] Stable & Unstable Sorting
