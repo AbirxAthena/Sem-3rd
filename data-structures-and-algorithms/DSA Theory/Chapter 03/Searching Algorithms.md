@@ -63,3 +63,84 @@ LinearSearch(arr[], target)
 5. Else:
      - End.
 ```
+
+## Binary Search:       
++ It is used when the Array or the Collection is Sorted.
++ It works on Divide and Conquer Method.
++ It Usually Divides the Time Complexity of the Searching.
+
+**Process of Binary Search**
++ Let's Start From the Beginning.
++ It uses to Divide the Array from the Middle and Name That Element "Mid"
++ Then The Mid is Compared with the Key. [If the Mid Checks Out We Got Our Index].
++ Otherwise The Mid is then Compared with the Key.
++ + If the Mid is Greater than the Key the Right Remaining Part is Selected.
++ + If the Mid is Smaller than the Key the Left Remaining Part is Selected.
++ This process is continued until the key is found or the total search space is exhausted.
+
+**Example**
+#### Let's Take a Array: [2, 3, 5, 7, 10, 19, 25, 87, 90, 93]       
+#### And Key: 7
+
++ Step 1: 
+Set the array as [2, 3, 5, 7, 10, 19, 25, 87, 90, 93].     
+Set the key as 7.     
+Set the left pointer to the first index of the array (0).     
+Set the right pointer to the last index of the array (9).     
+Calculate the mid index as (left + right) / 2, which is initially (0 + 9) / 2 = 4.     
++ Step 2: 
+Compare the key (7) with the element at the mid index (10).     
+Since 7 is less than 10, the search range reduces to the left half of the array.     
++ Step 3: 
+Update the right pointer to mid - 1, which is 3.     
+Calculate the new mid index as (left + right) / 2 = (0 + 3) / 2 = 1.     
++ Step 4:      
+Compare the key (7) with the element at the new mid index (3).     
+Since 7 is greater than 3, the search range reduces to the right half of the array.     
++ Step 5: 
+Update the left pointer to mid + 1, which is 2.     
+Calculate the new mid index as (left + right) / 2 = (2 + 3) / 2 = 2.     
++ Step 6:
+Compare the key (7) with the element at the new mid index (5).     
+Since 7 is greater than 5, the search range reduces to the right half of the array.     
++ Step 7:
+Update the left pointer to mid + 1, which is 3.     
+Update the mid index as (left + right) / 2 = (3 + 3) / 2 = 3.     
++ Step 8:
+Compare the key (7) with the element at the new mid index (7).     
+Since the key matches the element at the mid index, the search is successful.     
++ Step 9:
+The key 7 is found at index 3 in the array.     
+
+### <u> **Complexity of Linear Search:** </u>  
+#### Best Time Complexity: $O(1)$  
+#### Worst Time Complexity: $O(log N)$  
+#### Average Time Complexity: $O(log N)$  
+#### Auxiliary Space: $O(1)$  
+
+**Advantages of Binary Search:**  
+= It is Very Fast in Terms of Searching.    
+= Faster than Many Searching Like Exponential Search Etc with Same Time Complexity.    
+= It works Best on the Outer Storage Like Harddisk Etc.
+= Works Best on Larger DataTypes
+
+**Disadvantages of Binary Search:**  
+= The Array or The Collection of Data Need to Be Sorted.     
+= The Collection must be Stored in a [contiguous memory](https://pastemd.netlify.app/pastes/tF4R22euoWRVDp1BJD3e).    
+= The Array Must be Comparable So it Can be Sorted.    
+
+### Algorithm for Binary Search
+```
+BinarySearch(arr[], target)
+1. Set left to 0 and right to the length of the array - 1.
+2. While left is less than or equal to right:
+     a. Set mid to the midpoint between left and right: (left + right) / 2.
+     b. If the element at mid is equal to the target:
+          i. Return mid as the index of the target.
+     c. If the element at mid is greater than the target:
+          i. Set right to mid - 1.
+     d. If the element at mid is less than the target:
+          i. Set left to mid + 1.
+3. If the target is not found after the loop:
+     - End
+```
